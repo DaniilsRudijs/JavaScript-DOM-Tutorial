@@ -1,4 +1,8 @@
-const banner = document.getElementById('page-banner');
-const bookList = document.getElementById('book-list');
+const titles = document.getElementsByClassName('title');
 
-console.log(banner, bookList);
+console.log(Array.isArray(titles));
+console.log(Array.isArray(Array.from(titles)));
+
+Array.from(titles).forEach(function(item){
+    console.log(item);
+  });
